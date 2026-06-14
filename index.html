@@ -30,7 +30,17 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
 </style>
+
+<!--- tutaj jest poczatek scroll-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="style.css"> 
+
+<!--- tutaj jest koniec scroll-->
 
 </head>
 
@@ -52,11 +62,13 @@ h1 {
 
 
 
+<!-- ciezko bedzie tera zrobic te scrolle po lewo i prawo bo to bym ci musial cala strone pozmieniac, narazie rob to co tam masz zrobic jutro jak wroce to ci to ogarne  ~mordunia -->
 
+<!--- jak cos tylko pomoz mi tego scrolla wstawic by dzialal pod map'em XDDD-->
 
 </div>
 
-
+<div class="section">
 
 <div style="text-align: center;">
 <h2 style="background-image: url('ScrollFull.png'); background-size: 100% 100%;
@@ -85,6 +97,9 @@ usemap="#workmap" width="400px">
   border-radius: 10px;"> Click on either Telamon or Hacklord's head <br> to be taken to their selective wiki's</p>
 
 </div>
+
+</div>
+
 <map name="workmap">
 
 <area shape="rect" coords="90,44,180,190"
@@ -92,11 +107,30 @@ alt="Telamon" href="https://roblox.fandom.com/wiki/Player:Telamon" target="_blan
 <area shape="rect" coords="120,60,260,190"
 alt="Hacklord" href="https://villains.fandom.com/wiki/Hacklord_Shedletsky" target="_blank" alt="Hacklord Wiki"> 
 
-
-
-
-
 </map>
+
+<!--- tutaj jest poczatek scroll-->
+
+  <div class="scroll">
+        <div class="scroll-top" id="scrollTop">
+            <img src="Zdjęcia/ScrollTop.png" alt="Click to unroll the scroll">
+        </div>
+
+        <div class="scroll-middle-wrapper" id="scrollMiddle">
+            <div class="scroll-middle-bg"></div>
+            <div class="scroll-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste aliquam mollitia culpa aliquid ipsa, modi placeat recusandae cum? Iste reiciendis quos doloremque illo ipsum consectetur, accusamus illum dolorum cupiditate?</p>
+            </div>
+        </div>
+
+        <div class="scroll-bottom" id="scrollBottom">
+            <img src="Zdjęcia/ScrollBottom.png" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+<!--- tutaj jest koniec scroll i think LOL-->
 
 <pre style="float:right">
      Text that will later, 
