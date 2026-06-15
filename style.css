@@ -39,6 +39,7 @@ header {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 8px;
 }
 
 .note {
@@ -78,6 +79,26 @@ header {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 10px;
+}
+
+.scrollbtnbg {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.scrollbtn {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transform: scale(1.0);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.scrollbtn:hover {
+    color: rgb(175, 235, 64);
+    transform: scale(1.1);
 }
 
 .poem {
