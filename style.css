@@ -106,12 +106,53 @@ header {
     transform: scale(1.1);
 }
 
+.gifandtext {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.roar {
+  width: 50%; 
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 1;
+}
+
+
+.right-content {
+  display: flex;
+  flex-direction: column;    
+  align-items: center;  
+  justify-content: center;     
+  width: 50%;                
+  gap: 15px;
+  flex-shrink: 1;
+}
+
+
 .poem {
-    float: right;
     color: aliceblue;
     font-family: 'Courier New', monospace;
-    margin: 0 20px 20px;
+    margin: 0;
+
+    background-image: url(https://media1.tenor.com/m/9b8rugNGRB0AAAAC/cthulhu-cthulhu-has-awakened.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+     padding: 50px 30px;
+     text-align: center;
+     
 }
+
+.bottom-image {
+    width: 100%;
+    height:auto;
+}
+
+
 
 footer {
     clear: both;
