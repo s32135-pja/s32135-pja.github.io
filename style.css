@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     background-image: url("images/Background.png");
@@ -20,6 +24,7 @@ body {
     padding: 3%;
     border-radius: 8px;
 }
+
 
 h1 {
     font-family: 'Aboreto', sans-serif;
@@ -116,15 +121,22 @@ footer {
 
 .funky_text {
     position: relative;
-    animation: mymove 5s infinite alternate;
-    display: flex;
+    animation: mymove 10s linear infinite alternate;
+    display: inline-flex;
     justify-content: center;
     margin: 20px 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    
 }
 
 @keyframes mymove {
-    from { left: 0px; }
-    to { left: 200px; }
+    from { 
+        transform: translateX(calc(-50vw + 50%)); 
+    }
+    to { 
+        transform: translateX(calc(50vw - 50%)); 
+    }
 }
 
 .socials {
