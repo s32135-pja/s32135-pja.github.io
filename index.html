@@ -61,6 +61,42 @@ h1 {
      }
 </style>
 
+<style>
+     .socials a {
+          color: aliceblue;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+          transition:all 0.3 ease;
+
+     }
+
+     .socials a:hover {
+          color: rgb(175, 235, 64);
+          transform: scale(1.1);
+     }
+
+     @keyframes continuous-shake {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        20% { transform: translate(-2px, 1px) rotate(-1deg); }
+        40% { transform: translate(-1px, -1px) rotate(1deg); }
+        60% { transform: translate(2px, 0px) rotate(0deg); }
+        80% { transform: translate(-1px, 2px) rotate(1deg); }
+        100% { transform: translate(1px, -1px) rotate(-1deg); }
+     }
+
+         .shake-img:hover {
+        cursor: pointer;
+        animation: continuous-shake 0.15s infinite linear; 
+         }
+
+
+
+</style>>
+
+
+
+
 
 
 </head>
@@ -174,14 +210,14 @@ alt="Hacklord" href="https://villains.fandom.com/wiki/Hacklord_Shedletsky" targe
 
 <div class="socials" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
 
-  <div style="text-align: center;">
-    <a href="https://www.youtube.com/@sorensaur" target="_blank">Youtube Account</a> <br>
+<div style="text-align: center; background-color: rgb(27, 39, 15); padding: 3%; border-radius: 8px; ">
+     <a href="https://www.youtube.com/@sorensaur" target="_blank">Youtube Account</a> <br>
     <a href="https://tiktok.com" target="_blank">Tiktok Account</a> <br>
     <a href="https://x.com/SorenSaur" target="_blank">Twitter Account</a> <br>
   </div>
 
 
-  <img src="HackThink.png" alt="Thinky Tinky" style="width: 20%; height: auto;">
+  <img src="HackThink.png" class="shake-img" alt="Thinky Tinky" style="width: 20%; height: auto;">
 
 </div>
 
