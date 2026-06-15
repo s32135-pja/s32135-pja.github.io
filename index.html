@@ -1,229 +1,84 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-
-
-
-<head> 
-
-
-
-
-<title>Telahack</title>
-<meta name="description" conent="The best ship ever">
-
-<link rel="icon" type="image" href="TelaIcon.png">>
-
-<link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
-
-<style>
-h1 {
-    font-family: 'Aboreto';font-size: 38px;
-}
-</style>
-
-
-<style>
-     body {
-          background-image: url("Background.png") ;
-     }
-</style>
-
-<style>
-     .image-container {
-    display: flex;
-    justify-content: center;
-}
-
-</style>
-
-<style>
-     .funky_text {
-         width: 100%; 
-         height: 100%;
-         position: relative;
-         animation: mymove 5s infinite alternate;
-     }
-
-     @keyframes mymove {
-  from {left: 0px;}
-  to {left: 200px;}
-     }
-
-  </style>
-
-
-<style>
-     .socials {
-
-             
-     }
-</style>
-
-<style>
-     .socials a {
-          color: aliceblue;
-          text-decoration: none;
-          font-weight: bold;
-          display: inline-block;
-          transition:all 0.3 ease;
-
-     }
-
-     .socials a:hover {
-          color: rgb(175, 235, 64);
-          transform: scale(1.1);
-     }
-
-     @keyframes continuous-shake {
-        0% { transform: translate(0, 0) rotate(0deg); }
-        20% { transform: translate(-2px, 1px) rotate(-1deg); }
-        40% { transform: translate(-1px, -1px) rotate(1deg); }
-        60% { transform: translate(2px, 0px) rotate(0deg); }
-        80% { transform: translate(-1px, 2px) rotate(1deg); }
-        100% { transform: translate(1px, -1px) rotate(-1deg); }
-     }
-
-         .shake-img:hover {
-        cursor: pointer;
-        animation: continuous-shake 0.15s infinite linear; 
-         }
-
-
-
-</style>>
-
-
-
-
-
-
+<head>
+    <meta charset="UTF-8">
+    <title>Telahack</title>
+    <meta name="description" content="The best ship ever">
+    <link rel="icon" type="image/png" href="images/TelaIcon.png">
+    <link href="https://fonts.googleapis.com/css?family=Aboreto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
-
-
-
-
-
-
 
 <body>
 
-<div style="text-align:center;">
+    <header>
+        <h1>Telahack, wonders of self adoration.</h1>
+    </header>
 
-<header style="background-color: rgb(59, 52, 52); color:rgb(216, 211, 205); font-weight: bold;">
-<h1>Telahack, wonders of self adoration.</h1>
-</header>
+    <hr>
 
-<hr>
-<p title="random bullshit"><b>Very random text as a test.</b> This has been done purely to test out the capability of my coding skills.
-     <br> <i>Me, Sorensaur, the greatest, most humble being alive shall see if my skills are up to this task.</i> </p> 
-<hr>
+    <p class="note" title="random bullshit">
+        <b>Very random text as a test.</b> This has been done purely to test out the capability of my coding skills.
+        <br>
+        <i>Me, Sorensaur, the greatest, most humble being alive shall see if my skills are up to this task.</i>
+    </p>
 
-<img src="LONGBanner.png" width="100%" height="30%" alt="hackie in game">
+    <hr>
 
+    <img src="images/LONGBanner.png" class="banner" alt="hackie in game">
 
+    <div class="section" style="text-align: center;">
 
-<!-- ciezko bedzie tera zrobic te scrolle po lewo i prawo bo to bym ci musial cala strone pozmieniac, narazie rob to co tam masz zrobic jutro jak wroce to ci to ogarne  ~mordunia -->
+        <h2 class="scroll-title">HACKLORD and TELAMON</h2>
 
-<!--- jak cos tylko pomoz mi tego scrolla wstawic by dzialal pod map'em XDDD-->
+        <div class="image-container">
+            <img src="images/Telahack.jpg" alt="The lovebirds" usemap="#workmap" width="400px">
+        </div>
 
-</div>
+        <map name="workmap">
+            <area shape="rect" coords="90,44,180,190" alt="Telamon wiki" href="https://roblox.fandom.com/wiki/Player:Telamon" target="_blank">
+            <area shape="rect" coords="120,60,260,190" alt="Hacklord wiki" href="https://villains.fandom.com/wiki/Hacklord_Shedletsky" target="_blank">
+        </map>
 
-<div class="section">
+        <p><a href="scroll/index.html">Scroll</a></p>
 
-<div style="text-align: center;">
-<h2 style="background-image: url('ScrollFull.png'); background-size: 100% 100%;
- background-repeat: no-repeat;
-  display: inline-block;
-   width: 450px;
-    height: 90px;
-     line-height: 80px;
-      text-align: center;
-       padding: 0 40px;
-        box-sizing: border-box; color: rgb(216, 211, 205);">HACKLORD and TELAMON</h2>
+        <br>
 
-</div>
+        <p class="caption">
+            Click on either Telamon or Hacklord's head <br> to be taken to their selective wikis
+        </p>
 
+        <pre class="poem">
+In every timeline
+Every possibility
+It's you.
 
-<div class="image-container">
-<img src="Telahack.jpg" alt="The lovebirds"
-usemap="#workmap" width="400px">
-</div>
+Always staring
+back at me.
+        </pre>
 
-<br><br>
+    </div>
 
-<div style="text-align: center;">
-<p style="font-family: courier; background-color: rgba(0, 0, 0, 0.5);
- color: white; display: inline-block; padding: 10px 15px;
-  border-radius: 10px;"> Click on either Telamon or Hacklord's head <br> to be taken to their selective wiki's</p>
+    <footer>
 
-</div>
+        <hr>
+        <p style="color: aliceblue;">Author: Soren [s32135]</p>
+        <hr>
 
-</div>
+        <div class="funky_text">
+            <p class="caption">Have any questions? Ask me!!!</p>
+        </div>
 
-<map name="workmap">
+        <div class="socials">
+            <div class="socials-box">
+                <a href="https://www.youtube.com/@sorensaur" target="_blank">Youtube Account</a><br>
+                <a href="https://tiktok.com" target="_blank">Tiktok Account</a><br>
+                <a href="https://x.com/SorenSaur" target="_blank">Twitter Account</a>
+            </div>
+            <img src="images/HackThink.png" class="shake-img" alt="Thinky Tinky">
+        </div>
 
-<area shape="rect" coords="90,44,180,190"
-alt="Telamon" href="https://roblox.fandom.com/wiki/Player:Telamon" target="_blank" alt="Telamon wiki">
-<area shape="rect" coords="120,60,260,190"
-alt="Hacklord" href="https://villains.fandom.com/wiki/Hacklord_Shedletsky" target="_blank" alt="Hacklord Wiki"> 
-
-</map>
-
-
-
-<pre style="float:right; color: aliceblue;" >
-     In every timeline
-     Every possibility
-     It's you. 
-     
-     Always staring
-     back at me.
-
-</pre>
-
-
-<br>
-<br>
-
+    </footer>
 
 </body>
-
-<footer>
-
-     <hr>
-<p style="text-align: center; color: aliceblue; ">Author: Soren [s32135]</p>
-<hr>
-
-<div class="funky_text">
-
-<p style="font-family: courier; background-color: rgba(0, 0, 0, 0.5);
- color: white; display: inline-block; padding: 10px 15px;
-  border-radius: 10px;"> Have any questions? Ask me!!!</p>
-
-</div>
-
-
-
-<div class="socials" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-
-<div style="text-align: center; background-color: rgb(27, 39, 15); padding: 3%; border-radius: 8px; ">
-     <a href="https://www.youtube.com/@sorensaur" target="_blank">Youtube Account</a> <br>
-    <a href="https://tiktok.com" target="_blank">Tiktok Account</a> <br>
-    <a href="https://x.com/SorenSaur" target="_blank">Twitter Account</a> <br>
-  </div>
-
-
-  <img src="HackThink.png" class="shake-img" alt="Thinky Tinky" style="width: 20%; height: auto;">
-
-</div>
-
-
-</footer>
-
-
-
 </html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1919;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    padding: 40px 20px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    max-width: 100%;
+}
+
+.scroll-top {
+    width: 100%;
+    display: block;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+}
+
+.scroll-top img,
+.scroll-bottom img {
+    width: 100%;
+    display: block;
+}
+
+.scroll-bottom {
+    width: 100%;
+    display: block;
+    flex-shrink: 0;
+    pointer-events: none;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+}
+
+.scroll-middle-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: -2px 0;
+    height: 0;
+    transition: height 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.scroll-middle-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("images/ScrollMiddle.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    z-index: 0;
+}
+
+.scroll-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px 60px;
+    color: #fffcf8;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.scroll-content h1,
+.scroll-content h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.scroll-content p {
+    margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+    .scroll-content {
+        padding: 20px 35px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("images/Background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, serif;
+    color: aliceblue;
+}
+
+h1 {
+    font-family: 'Aboreto', sans-serif;
+    font-size: 38px;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(59, 52, 52);
+    color: rgb(216, 211, 205);
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.note {
+    font-style: italic;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.section {
+    padding: 20px;
+}
+
+.scroll-title {
+    background-image: url('images/ScrollFull.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 450px;
+    height: 90px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0 40px;
+    color: rgb(216, 211, 205);
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.caption {
+    font-family: 'Courier New', monospace;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.poem {
+    float: right;
+    color: aliceblue;
+    font-family: 'Courier New', monospace;
+    margin: 0 20px 20px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.funky_text {
+    position: relative;
+    animation: mymove 5s infinite alternate;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+@keyframes mymove {
+    from { left: 0px; }
+    to { left: 200px; }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.socials-box {
+    text-align: center;
+    background-color: rgb(27, 39, 15);
+    padding: 3%;
+    border-radius: 8px;
+}
+
+.socials a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+    color: rgb(175, 235, 64);
+    transform: scale(1.1);
+}
+
+@keyframes continuous-shake {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    20%  { transform: translate(-2px, 1px) rotate(-1deg); }
+    40%  { transform: translate(-1px, -1px) rotate(1deg); }
+    60%  { transform: translate(2px, 0px) rotate(0deg); }
+    80%  { transform: translate(-1px, 2px) rotate(1deg); }
+    100% { transform: translate(1px, -1px) rotate(-1deg); }
+}
+
+.shake-img {
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+}
+
+.shake-img:hover {
+    animation: continuous-shake 0.15s infinite linear;
+}
+
+hr {
+    border-color: rgba(255,255,255,0.3);
+}
